@@ -131,3 +131,10 @@ terraform {
   }
 */
 }
+
+
+module "s3-bucket-dr" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-dr/aws"
+  version = "1.1.0"
+  bucket_name = "dr-2026-bucket"
+}
